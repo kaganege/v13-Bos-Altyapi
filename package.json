@@ -1,0 +1,24 @@
+{
+    "name": "v13-test",
+    "version": "1.0.0",
+    "description": "v13 test botu",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "nodemon index.js"
+    },
+    "keywords": [
+        "v13",
+        "discord.js"
+    ],
+    "author": "Tavuk Döner <kaganegeozkan@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@discordjs/rest": "^0.1.0-canary.0",
+        "@discordjs/voice": "^0.5.5",
+        "ascii-table": "^0.0.9",
+        "discord-reply": "^0.1.2",
+        "discord.js": "^13.0.0",
+        "nodemon": "^2.0.12"
+    }
+}
