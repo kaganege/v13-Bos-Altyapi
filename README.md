@@ -11,3 +11,6 @@ yazarak botun dosyalarını indirip
 npm start
 ```
 yazarak botu başlatabilirsiniz.
+
+## Destek
+Bir hata olursa DC: [Tavuk Döner#7528](https://discord.com/users/729651204216455229)
