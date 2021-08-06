@@ -29,6 +29,7 @@ const data = [
 
 client.application?.commands.set(data)
 ```
+yerine istediğiniz komutu yazıp botun bulunduğu bir sunucuda **`!kur`** yazarak slashları kurun.
 
 ## Destek
 Bir hata olursa DC: [Tavuk Döner#7528](https://discord.com/users/729651204216455229)
