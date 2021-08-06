@@ -123,7 +123,7 @@ module.exports = {
         }
 
         if (
-            message.content.toLowerCase() === "!deploy" &&
+            message.content.toLowerCase() === "!kur" &&
             message.author.id === sahip
         ) {
             const data = [
@@ -135,6 +135,10 @@ module.exports = {
 
             const command = await client.application?.commands.set(data);
             console.log(command.name+' Komutu Yüklendi');
+            message.channel.send(
+                "Slash Komutlar Kuruldu! Lütfen botu atıp bu linkten tekrar davet ediniz: " +
+                    `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=applications.commands%20bot`
+            );
         }
     },
 };
