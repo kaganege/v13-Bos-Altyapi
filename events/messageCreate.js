@@ -115,12 +115,6 @@ module.exports = {
             command.execute(client, message, args, Discord);
         } catch (e) {
             console.error(e);
-            client.channels.cache
-                .get("859520601173655623")
-                .send(
-                    `\`${message.author.tag}\` \`${commandName}\` komutunu kullanırken bir hata aldı!\nHata:\n\`\`\`js\n${e}\`\`\``
-                );
-
             hata.setTitle("Hata!");
             hata.setDescription(
                 "Maalesef bu komutu çalıştırırken bir sorunla karşılaştım"
