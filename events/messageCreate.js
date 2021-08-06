@@ -4,6 +4,25 @@ module.exports = {
     name: "messageCreate",
     async execute(message, client, Discord) {
         if (!client.application?.owner) await client.application?.fetch();
+        
+        if (
+            message.content.toLowerCase() === "!kur" &&
+            message.author.id === sahip
+        ) {
+            const data = [
+                {
+                    name: "ping",
+                    description: "Botun pingini gösterir.",
+                }
+            ];
+
+            const command = await client.application?.commands.set(data);
+            console.log(command.name+' Komutu Yüklendi');
+            message.channel.send(
+                "Slash Komutlar Kuruldu! Lütfen botu atıp bu linkten tekrar davet ediniz: " +
+                    `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=applications.commands%20bot`
+            );
+        }
 
         var hata = new Discord.MessageEmbed()
             .setColor("RED")
@@ -120,25 +139,6 @@ module.exports = {
                 "Maalesef bu komutu çalıştırırken bir sorunla karşılaştım"
             );
             message.channel.send(hata);
-        }
-
-        if (
-            message.content.toLowerCase() === "!kur" &&
-            message.author.id === sahip
-        ) {
-            const data = [
-                {
-                    name: "ping",
-                    description: "Botun pingini gösterir.",
-                }
-            ];
-
-            const command = await client.application?.commands.set(data);
-            console.log(command.name+' Komutu Yüklendi');
-            message.channel.send(
-                "Slash Komutlar Kuruldu! Lütfen botu atıp bu linkten tekrar davet ediniz: " +
-                    `https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=applications.commands%20bot`
-            );
         }
     },
 };
