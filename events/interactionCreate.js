@@ -1,6 +1,6 @@
 module.exports = {
     name: "interactionCreate",
-    async execute(interaction) {
+    async execute(interaction, client) {
         if (!interaction.isCommand()) return;
 
         if (!client.slashCommmands.has(interaction.commandName)) return;
