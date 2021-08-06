@@ -120,21 +120,6 @@ module.exports = {
                 .send(
                     `\`${message.author.tag}\` \`${commandName}\` komutunu kullanırken bir hata aldı!\nHata:\n\`\`\`js\n${e}\`\`\``
                 );
-            if (message.channel.type == "dm") {
-                if (en) {
-                    hata.setTitle("Error!");
-                    hata.setDescription(
-                        "Sorry, I ran into a problem running this command"
-                    );
-                    message.channel.send(hata);
-                } else {
-                    hata.setTitle("Hata!");
-                    hata.setDescription(
-                        "Maalesef bu komutu çalıştırırken bir sorunla karşılaştım"
-                    );
-                    message.channel.send(hata);
-                }
-            }
 
             hata.setTitle("Hata!");
             hata.setDescription(
@@ -151,23 +136,11 @@ module.exports = {
                 {
                     name: "ping",
                     description: "Botun pingini gösterir.",
-                },
-                {
-                    name: "eval",
-                    description: "Deneme",
-                    options: [
-                        {
-                            name: "code",
-                            type: "STRING",
-                            description: "Code",
-                            required: true,
-                        },
-                    ],
-                },
+                }
             ];
 
             const command = await client.application?.commands.set(data);
-            console.log(command);
+            console.log(command.name+' Komutu Yüklendi');
         }
     },
 };
