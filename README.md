@@ -34,6 +34,7 @@ yerine istediğiniz komutu yazıp botun bulunduğu bir sunucuda **`!kur`** yazar
 ## Replit
 
 Botu replitte çalıştırmak için;
+
 İlk aşağıdaki butona tıkayarak replite aktarın.
 
 - [![Replite aktar](https://repl.it/badge/github/TavukDoner7528/v13-Bos-Altyapi)](https://repl.it/github/TavukDoner7528/v13-Bos-Altyapi)
