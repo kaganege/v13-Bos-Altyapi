@@ -31,6 +31,8 @@ client.application?.commands.set(data)
 ```
 yerine istediğiniz komutu yazıp botun bulunduğu bir sunucuda **`!kur`** yazarak slashları kurun.
 
+Daha fazla bilgi: https://discordjs.guide
+
 ## Replit
 
 Botu replitte çalıştırmak için;
