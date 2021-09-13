@@ -31,5 +31,20 @@ client.application?.commands.set(data)
 ```
 yerine istediğiniz komutu yazıp botun bulunduğu bir sunucuda **`!kur`** yazarak slashları kurun.
 
+## Replit
+
+Botu replitte çalıştırmak için;
+İlk aşağıdaki butona tıkayarak replite aktarın.
+
+- [![Replite aktar](https://repl.it/badge/github/TavukDoner7528/v13-Bos-Altyapi)](https://repl.it/github/TavukDoner7528/v13-Bos-Altyapi)
+
+Sonra `Shell` kısmına gelip
+```sh
+npm i -D node@16.6.1
+```
+yazın
+
+Bitti :D
+
 ## Destek
 Bir hata olursa DC: [Tavuk Döner#7528](https://discord.com/users/729651204216455229)
