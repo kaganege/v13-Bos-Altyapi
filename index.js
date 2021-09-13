@@ -23,8 +23,6 @@ const fs = require("fs");
 const AsciiTable = require("ascii-table");
 const { token, sahip, prefix } = require("./config.json");
 
-require("discord-reply");
-
 client.slashCommmands = new Collection();
 client.commands = new Collection();
 
