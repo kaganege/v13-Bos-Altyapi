@@ -72,6 +72,6 @@ client.login(token);
 Promise.prototype.sil = function (time) {
     if (this)
         this.then((s) => {
-            if (s.deletable) s.delete({ timeout: time * 1000 });
+            if (s.deletable) setTimeout((), s.delete(), time * 1000);
         });
 };
