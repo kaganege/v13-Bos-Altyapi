@@ -49,3 +49,5 @@ Bitti :D
 
 ## Destek
 Bir hata olursa DC: [Tavuk Döner#7528](https://discord.com/users/729651204216455229)
+
+<img src="https://contributors-img.web.app/image?repo=TavukDoner7528/v13-Bos-Altyapi" />
