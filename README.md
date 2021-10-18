@@ -8,7 +8,18 @@
 
 ## Kurulum
 
-İlk olarak [discord aplication portal](https://discord.com/developers/applications)'dan botunuzun tokenini alıp config.json'daki token kısmına girmek.
+İlk olarak config.json'daki yerleri doldur.
+
+> Örnek
+
+```
+{
+  "prefix": "!",
+  "sahip": "729651204216455229",
+  "geliştiriciler": ["729651204216455229"],
+  "token": "bot-token"
+}
+```
 
 Daha sonra
 
