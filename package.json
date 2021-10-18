@@ -4,21 +4,25 @@
     "description": "v13 test botu",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "test": "nodemon index.js"
+        "start": "npx node index.js"
     },
     "keywords": [
         "v13",
         "discord.js"
     ],
-    "author": "Tavuk Döner <kaganegeozkan@gmail.com>",
+    "author": "Tavuk Döner",
     "license": "MIT",
     "dependencies": {
+        "@discordjs/builders": "^0.6.0",
         "@discordjs/rest": "^0.1.0-canary.0",
         "@discordjs/voice": "^0.5.5",
         "ascii-table": "^0.0.9",
+        "discord-api-types": "^0.24.0",
         "discord-reply": "^0.1.2",
         "discord.js": "^13.0.0",
-        "nodemon": "^2.0.12"
+        "events": "^3.3.0"
+    },
+    "devDependencies": {
+        "node": "^16.6.1"
     }
 }

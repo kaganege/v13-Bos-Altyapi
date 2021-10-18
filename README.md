@@ -1,6 +1,16 @@
 # v13 Boş Altyapı
 
+## İçindekiler
+
+- [Kurulum](#kurulum)
+- [Replit](#replit)
+- [Destek](#destek)
+
 ## Kurulum
+
+İlk olarak [discord aplication portal](https://discord.com/developers/applications)'dan botunuzun tokenini alıp config.json'daki token kısmına girmek.
+
+Daha sonra
 
 ```sh
 npm i
@@ -10,46 +20,16 @@ yazarak botun dosyalarını indirip
 ```sh
 npm start
 ```
-yazarak botu başlatın.
+yazarak botu başlatın ve botu sunucunuza ekleyin.
 
-Sonra botun bulunduğu bir sunucuda **`!kur`** yazarak slash komutlarını kurun.
+**Bu kadar basit!**
 
-Eğer slash komut eklemek istiyorsanız events/messageCreate.js de
-```js
-const data = [
-  {
-     name: "ping",
-     description: "Botun pingini gösterir.",
-  },
-  {
-    name: "komutun-adı",
-    description: "komutun açıklaması"
-  }
-];
-
-client.application?.commands.set(data)
-```
-yerine istediğiniz komutu yazıp botun bulunduğu bir sunucuda **`!kur`** yazarak slashları kurun.
-
-Daha fazla bilgi: https://discordjs.guide
+**NOT:** Botu başlatmadan önce botu sunucunuza eklerseniz slash komutlar gözükmeyecektir! Eğer eklediyseniz botu sunucudan atıp geri davet edin.
 
 ## Replit
 
-Botu replitte çalıştırmak için;
-
-İlk aşağıdaki butona tıkayarak replite aktarın.
-
+Botu replitte çalıştırmak için aşağıdaki butona tıklayınız.
 - [![Replite aktar](https://repl.it/badge/github/TavukDoner7528/v13-Bos-Altyapi)](https://repl.it/github/TavukDoner7528/v13-Bos-Altyapi)
-
-Sonra `Shell` kısmına gelip
-```sh
-npm i -D node@16.6.1
-```
-yazın
-
-Bitti :D
 
 ## Destek
 Bir hata olursa DC: [Tavuk Döner#7528](https://discord.com/users/729651204216455229)
-
-<img src="https://contributors-img.web.app/image?repo=TavukDoner7528/v13-Bos-Altyapi" />
