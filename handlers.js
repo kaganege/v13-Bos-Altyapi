@@ -45,7 +45,7 @@ module.exports = (client) => {
   for (const file of slashCommandFiles) {
     const command = require(`./Slash-Commands/${file}`);
     console.log("Yüklenen slash komutu: " + command.name);
-    client.slashCommmands.set(command.name, command);
+    client.slashCommands.set(command.name, command);
     if (command.option) {
       if (command.option.string) {
         const string = command.option.string
@@ -65,7 +65,7 @@ module.exports = (client) => {
         data.push(
           new SlashCommandBuilder()
             .setName(command.name)
-            .setDescription(commmand.description)
+            .setDescription(command.description)
             .addIntegerOption(
               option => option
                 .setName(int.name)
@@ -78,7 +78,7 @@ module.exports = (client) => {
         data.push(
           new SlashCommandBuilder()
             .setName(command.name)
-            .setDescription(commmand.description)
+            .setDescription(command.description)
             .addNumberOption(
               option => option
                 .setName(number.name)
@@ -91,7 +91,7 @@ module.exports = (client) => {
         data.push(
           new SlashCommandBuilder()
             .setName(command.name)
-            .setDescription(commmand.description)
+            .setDescription(command.description)
             .addBooleanOption(
               option => option
                 .setName(boolean.name)
@@ -104,7 +104,7 @@ module.exports = (client) => {
         data.push(
           new SlashCommandBuilder()
             .setName(command.name)
-            .setDescription(commmand.description)
+            .setDescription(command.description)
             .addUserOption(
               option => option
                 .setName(user.name)
@@ -117,7 +117,7 @@ module.exports = (client) => {
         data.push(
           new SlashCommandBuilder()
             .setName(command.name)
-            .setDescription(commmand.description)
+            .setDescription(command.description)
             .addChannelOption(
               option => option
                 .setName(channel.name)
@@ -130,7 +130,7 @@ module.exports = (client) => {
         data.push(
           new SlashCommandBuilder()
             .setName(command.name)
-            .setDescription(commmand.description)
+            .setDescription(command.description)
             .addRoleOption(
               option => option
                 .setName(role.name)
@@ -143,7 +143,7 @@ module.exports = (client) => {
         data.push(
           new SlashCommandBuilder()
             .setName(command.name)
-            .setDescription(commmand.description)
+            .setDescription(command.description)
             .addMentionableOption(
               option => option
                 .setName(mention.name)
