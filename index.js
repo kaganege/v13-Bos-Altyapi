@@ -23,7 +23,7 @@ const AsciiTable = require("ascii-table");
 const { sahip, prefix } = require("./config.json");
 const token = process.env["token"]
 
-client.slashCommmands = new Collection();
+client.slashCommands = new Collection();
 client.commands = new Collection();
 
 client.login(token);
